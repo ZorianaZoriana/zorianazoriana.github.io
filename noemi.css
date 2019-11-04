@@ -1,0 +1,267 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	display: grid;
+	font-family: 'Josefin Sans', sans-serif;
+	color:black;
+	overflow-wrap: break-word;
+	}
+.container{
+	width: 100%;
+}
+.header{
+	background-color: white;
+		}
+.header_wrap{
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 50px;
+}
+.header_top{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 30px;
+	
+}
+.header_menu{
+	font-family: 'Josefin Sans', regular;
+	font-size: 13pt;
+	display:grid;
+	grid-auto-flow: column;
+}
+
+
+.menu_list{
+	 display: grid;
+	 grid-template-columns: 80px 100px 107px 80px 117px 85px;
+}
+
+
+.menu_link{
+	color:black;
+	text-decoration: none;
+}
+.social_networks{
+	display: grid;
+}
+.menu_item a:hover{
+	color:#b59f5b;
+
+}
+
+.submenu_item{
+	padding-top:10px;
+	padding-bottom:5px;
+	width: 80px;
+	display: block;
+	height: 30px;
+}
+.submenu_link{
+	text-decoration: none;
+	color:black;
+	display: block;
+}
+.dropdown-content{
+	display: none;
+	position: absolute;
+}
+
+.menu_item:hover .dropdown-content {
+  display: block;
+
+}
+
+.menu_item:hover .menu_link {
+	color:#b59f5b;
+	display: block;
+}
+.dropdown {
+	 position: relative;
+}
+
+
+.social_networks{
+	display: grid;
+	grid-template-columns: 20px 20px 20px 20px 20px;
+	column-gap: 30px;
+  	justify-self: right;
+}
+
+.header_name{
+	font-family: 'Josefin Sans', bold;
+	font-size: 70pt;
+	text-align: center;
+	padding-top: 50px;
+	margin-bottom: 40px;
+ 	letter-spacing: 15px;
+ }
+
+.border_bottom{
+	display:grid;
+	grid-template-columns: 1fr;
+	border-bottom: 3px solid #b59f5b;
+	margin-left: 580px;
+	margin-right: 570px;
+	margin-bottom: 70px;
+
+}
+
+.header_articles{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 10px;
+	margin-top: 60px;
+	grid-gap: 10px;
+	height: 526px;
+
+	}
+
+.article1 {
+	background: url(img/blackimage1.png);
+	background-repeat: no-repeat;
+	position: relative;
+	}
+.article1:hover .overlay1{
+	border: 2px solid #b59f5b;
+   z-index: 2;
+   position:absolute;
+   top:-50px;
+   width: 300px;
+   height: 400px;
+   margin-left: 50px;
+  }
+  .article1:hover .articletext{
+	border: none;
+	background-color: rgba(0, 0, 0, 0.7); 
+  }
+
+  .article1:hover .articletags{
+	border: none;
+	background-color: rgba(0, 0, 0, 0.7); 
+  }
+
+
+.article2{
+	background: url(img/blackimage2.png);
+	background-repeat: no-repeat;
+	position: relative;
+		}
+
+.article2:hover .overlay2{
+	border: 2px solid #b59f5b;
+   z-index: 2;
+   position:absolute;
+   top:-50px;
+   width: 300px;
+   height: 400px;
+   margin-left: 50px;
+}
+.article2:hover .articletext{
+	border: none;
+	background-color: rgba(0, 0, 0, 0.7); 
+  }
+
+  .article2:hover .articletags{
+	border: none;
+	background-color: rgba(0, 0, 0, 0.7); 
+  }
+.article3{
+	background: url(img/blackimage3.png);
+	background-repeat: no-repeat;
+	position: relative;
+}
+.article3:hover .overlay3{
+	border: 2px solid #b59f5b;
+   z-index: 2;
+   position:absolute;
+   top:-50px;
+   width: 300px;
+   height: 400px;
+   margin-left: 50px;
+}
+.article3:hover .articletext{
+	border: none;
+	background-color: rgba(0, 0, 0, 0.7); 
+  }
+
+  .article3:hover .articletags{
+	border: none;
+	background-color: rgba(0, 0, 0, 0.7); 
+  }
+
+.article1:hover{
+	background: url(img/image1.png);
+	background-repeat: no-repeat;
+}
+.article2:hover{
+	background: url(img/image2.png);
+	background-repeat: no-repeat;
+	}
+
+.article3:hover{
+	background: url(img/image3.png);
+	background-repeat: no-repeat;
+}
+
+
+
+.articlebox {
+position:absolute;
+top:100px;
+text-align: center;
+color:white;
+font-size: 14pt;
+
+}
+
+.articletags{
+font-size: 12pt;
+color: #b59f5b;
+word-spacing: 13px;
+text-transform: uppercase;
+font-weight: bold;
+padding-bottom: 10px;
+margin-left: 53px;
+padding-top: 10px;
+}
+
+.articletext{
+	margin-left: 53px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	border: 1px solid #b59f5b;
+	line-height:1.2;
+	width: 300px;
+	height: 80px;
+	}
+
+.dateandcomments {
+	display: grid;
+	grid-template-columns: 200px 1fr;
+}
+.date{
+	color: rgba(255,255,255,0.7);
+	text-align: left;
+	margin-left: 60px;
+	margin-top: 20px;
+	font-size: 15px;
+	width: 150px;
+	}
+
+.comments{
+	background-image: url(img/comment.png);
+	background-repeat: no-repeat;
+	position: relative;
+	top:20px;
+	left: 100px;
+
+}
+
+.commentsnumber{
+	right:48px;
+	position: relative;
+}
+
