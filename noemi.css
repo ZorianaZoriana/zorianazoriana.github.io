@@ -281,7 +281,7 @@ padding-top: 10px;
 }
 
 .title_image_box{
-	width: 335px;
+	width: 350px;
 	height: 135px;
 	border: 2px solid #e1d9bd;
 	position: relative;
@@ -429,6 +429,7 @@ color: rgba(0,0,0,0.5);
 	z-index: 2;
 	position: relative;
 	margin-left: 30px;
+	top:-400px;
 	
 }
 .aboutme{
@@ -436,8 +437,9 @@ border: 2px solid #e1d9bd;
 z-index: 1;
 width: 220px;
 height: 350px;
-position: relative;
-top:-85px;
+margin-top: 50px;
+margin-bottom: 60px;
+
 }
 
 .aboutme_title{
@@ -472,29 +474,28 @@ text-align: center;
 	margin-top: 30px;
 }
 
-.inscription1{
-	font-size: 18px;
+.inscription{
+	font-size: 15px;
 	text-align: center;
-	margin-top: -40px;
-	margin-bottom: 10px;
+	text-transform:uppercase;
+	margin-top: 50px;
+	padding-bottom: 10px;
 }
-
-.border_bottom2{
+.inscription_bottom{
 border: 1px solid #e1d9bd;
 width: 55px;
 margin-left: 85px;
-margin-bottom: 10px;
+margin-bottom: 20px;
 }
 
 
 .email{
 	width: 222px;
 	height: 42px;
-	margin-top: 20px;
 	margin-bottom: 20px;
 	padding-left: 15px;
 }
-.button{
+.subscribe_button{
 	background-color: #b59f5b; 
 	color: white;
 	width: 222px;
@@ -504,15 +505,10 @@ margin-bottom: 10px;
 	 text-transform: uppercase;
 	 font-size: 15px;
 	 font-family: 'Josefin Sans', sans-serif;
+	
 }
 
-.inscription2{
-	font-size: 15px;
-	text-align: center;
-	text-transform:uppercase;
-	margin-top: 25px;
-	padding-bottom: 10px;
-}
+
 
 .album{
 	display: grid;
@@ -527,14 +523,12 @@ margin-bottom: 10px;
 	font-size: 15px;
 	text-align: center;
 	text-transform:uppercase;
-	margin-top: 25px;
-	
+	margin-top: 60px;
 	width: 225px;
+	margin-bottom: 50px;
 	
 }
-.categorytitle{
-	margin-bottom: 10px;
-}
+
 .category{
 	text-transform: capitalize;
 	line-height: 1.2;
@@ -551,14 +545,9 @@ margin-bottom: 10px;
 }
 
 .recentposts{
-		margin-top: 40px;
-	margin-bottom: 10px;
 	text-align: center;
 }
-.posttitle{
-	text-transform: uppercase;
-	margin-bottom: 10px;
-}
+
 .post{
 width: 235px;
 height: 60px;
@@ -590,4 +579,140 @@ text-align: left;
 	text-align: left;
 	padding-left: 10px;
 	padding-top: 5px;
+}
+.searchbox{
+	display: grid;
+	grid-template-columns: 183px 40px;
+	margin-top: 45px;
+}
+.search{
+width: 185px;
+height: 40px;
+padding-left: 15px;
+}
+
+.lens{
+	width: 40px;
+	height: 40px;
+	background-color: #b59f5b;
+	background-image: url("img/lens.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+.lens:hover{
+	width: 40px;
+	height: 40px;
+	background-color: rgba(181,159,91, 0.8);
+	background-image: url("img/lens.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+
+.banner{
+	margin-top: 60px;
+}
+
+
+.bannerimage{
+	margin-top: 15px;
+}
+
+.facebook_window{
+	width: 220px;
+	height: 175px;
+	border: 1px solid #b59f5b;
+	text-align: center;
+}
+.tag_boxes{
+grid-auto-flow: dense;
+display: grid;                                
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+}
+
+.tag_title{
+	border: 2px solid #b59f5b;
+	width: min-content;
+	padding: 5px;
+	margin: 3px;
+}
+.instagram-link{
+	font-family: 'Mrs Sheppards', cursive;
+	font-size: 30px;
+	color:#b59f5b;
+	text-transform: lowercase;
+	width: 120px;
+	height: 35px;
+
+}
+
+.instagram-box{
+	width: 100%;
+	text-align: center;
+	
+}
+
+
+.inst_gold{
+	background-image: url("img/inst_gold.png");
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	left:580px;
+	top:-28px;
+
+}
+.footer_album{
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+
+.social_network_box{
+width: 1284px;
+height: 70px;
+background-color: #f4f7f6;
+margin-left: 30px;
+display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr;
+	margin-bottom: 40px;
+}
+
+.social_network_images{
+	display: grid;
+	grid-template-columns: repeat(6, 25px);
+	grid-template-rows: 1fr;
+	grid-gap: 5px;
+	 justify-items: center;
+	  margin: auto;
+}
+
+.ontop{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.ontop_text{
+	
+	  font-family: 'Mrs Sheppards', cursive;
+	font-size: 30px;
+	color:black;
+	text-transform: lowercase;
+}
+
+.ontop_text:hover{
+	
+	  font-family: 'Mrs Sheppards', cursive;
+	font-size: 30px;
+	color:#b59f5b;;
+	text-transform: lowercase;
+}
+
+.copyright_text{
+	font-size: 10px;
+	color:black;
+	text-align: center;
+	margin-bottom: 20px;
 }
